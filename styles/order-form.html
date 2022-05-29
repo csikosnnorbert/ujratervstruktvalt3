@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Order</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Újratervezés 3.0</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/styles/index.html">Index<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-table.html">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/selectors.html">Selectors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/order-form.html">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-amount.html">calcAmount</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/styles/bt.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bootstrap
+                    </a>
+                    <a class="nav-link" href="/styles/bt-amount.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Order-form
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-buttons.html">Bootstrap Grid and Buttons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-login-forms.html">Login</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <div>
+                    <label for="name">Név: *</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div>
+                    <label for="email">Email: *</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div>
+                    <label for="address">Cím: *</label>
+                    <input id="address" name="address" type="text" required>
+                </div>
+                <div>
+                    <label for="comment">Megjegyzés: *</label>
+                    <input id="comment" name="comment" type="5" required>
+                </div>
+            </fieldset>
+            <!-- az input type checkbox így mindegyiket ki tudom jelölni, ami nem jó, mert azt is tudom választani, hogy "Nem kérek" és ki tudom
+            választani az összes többi extrát is mellé -->
+            <fieldset>
+                <legend>Termékek adatai</legend>
+                <span>Extra feltét</span>
+                <div>
+                    <input checked id="nothing" name="nothing" type="checkbox" value="0">
+                    <label for="nothing">Nem kérek</label>
+                </div>
+                <div>
+                    <input checked id="cheese" name="cheese" type="checkbox" value="300">
+                    <label for="cheese">Sajt</label>
+                </div>
+                <div>
+                    <input checked id="double-cheese" name="double-cheese" type="checkbox" value="600">
+                    <label for="double-cheese">Dupla sajt</label>
+                </div>
+                <div>
+                    <input checked id="double-meat" name="double-meat" type="checkbox" value="1000">
+                    <label for="double-meat">Dupla hús</label>
+                </div>
+                <div>
+                    <input checked id="double-double" name="double-double" type="checkbox" value="1600">
+                    <label for="double-double">Dupla dupla</label>
+                </div>
+                <div>
+                    <input checked id="valami-mas" name="valami-mas" type="checkbox" value="1600">
+                    <label for="valami-mas">Dupla dupla</label>
+                </div>
+            </fieldset>
+            <!-- ha az input type radio és az input name -ek ugyanazok ("extra"), akkor tudok majd csak egyet kiválasztani -->
+            <fieldset>
+                <legend>Termék Adatai 2</legend>
+                <span>Extra feltét 2</span>
+                <div>
+                    <input checked id="nothing" name="extra" type="radio" value="0">
+                    <label for="nothing">Nem kérek</label>
+                </div>
+                <div>
+                    <input checked id="cheese" name="extra" type="radio" value="300">
+                    <label for="cheese">Sajt</label>
+                </div>
+                <div>
+                    <input checked id="double-cheese" name="extra" type="radio" value="600">
+                    <label for="double-cheese">Dupla sajt</label>
+                </div>
+                <div>
+                    <input checked id="double-meat" name="extra" type="radio" value="1000">
+                    <label for="double-meat">Dupla hús</label>
+                </div>
+                <div>
+                    <input checked id="double-double" name="extra" type="radio" value="1600">
+                    <label for="double-double">Dupla dupla</label>
+                </div>
+                <div>
+                    <input checked id="valami-mas" name="extra" type="radio" value="1600">
+                    <label for="valami-mas">Valami más</label>
+                </div>
+                <div>
+                    <label for="sauce">Szósz:</label>
+                    <select id="sauce" name="sauce">
+                        <option value="0" selected>szósz 1</option>
+                        <option value="100">szósz 2</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quantity">Mennyiség:</label>
+                    <input id="quantity" name="quantity" type="number" min="1" max="10">
+                </div>
+            </fieldset>
+            <div>
+                <input type="button" value="Rendelés leadása"> Ár: <span>1200</span> Ft
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

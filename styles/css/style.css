@@ -1,0 +1,61 @@
+
+/* saját betűtípus megadása */
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto/Roboto-BlackItalic.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: grape;
+    src: url("fonts/Grape_Nuts/GrapeNuts-Regular.ttf");
+    font-weight: 500;
+}
+
+h1 {
+    color: red;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: green; 
+    font-family: Roboto;
+}
+
+#bio-header {
+    color: brown;
+}
+
+#skills {
+    color: coral;
+}
+.content {
+    font-family: grape;
+    color: grey;
+    font-size: 24px;
+    text-align: justify;
+    text-transform: unset;
+    line-height: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-div {
+    background-color: lightblue;
+}
+
+.light {
+    background-color: aliceblue;
+}
+
+html {
+    text-transform: unset;
+}
+
+img {
+    width: 12%;
+    box-shadow: 3px 3px 7px black;
+    margin: 1%;
+}

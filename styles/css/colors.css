@@ -1,0 +1,12 @@
+#colorDiv {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    /* rgba az "a" az alpha csatorna, az átlátszóság */
+    background-color: rgba(80, 160, 255, 0);
+}
+
+html {
+    
+    background: url("../img/programmer2.jpg") no-repeat center;
+}

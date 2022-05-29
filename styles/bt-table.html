@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- respansive web design - content="width=device-width" ez azt jelenti, hogy a boostrap függőlegesen görgethetővé teszi az oldalt,
+    de vízszintesen nem (mobilon nem élvezhető ha vízszintesen is görgethető) -->
+    <title>Bootstrap-Table</title>
+    <!-- bootstrap szerverről -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- saját gépről -->
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/d767a58e84.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Újratervezés 3.0</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/styles/index.html">Index<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-table.html">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/selectors.html">Selectors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/order-form.html">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-amount.html">calcAmount</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/styles/bt.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bootstrap
+                    </a>
+                    <a class="nav-link" href="/styles/bt-amount.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Order-form
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-buttons.html">Bootstrap Grid and Buttons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-login-forms.html">Login</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <p></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <table class="table table-striped table-bordered table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Vezetéknév</th>
+                            <th>Keresztnév</th>
+                            <th>Életkor</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kiss</td>
+                            <td>János</td>
+                            <td>55</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-info btn">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-user-xmark"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- például az index.hu is így oldja meg, hogy nagy méretben egymás mellett vannak a cikkek, kisméretben egymás alá ugranak -->
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Újratervezés 3.0</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/styles/index.html">Index<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-table.html">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/selectors.html">Selectors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/order-form.html">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-amount.html">calcAmount</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/styles/bt.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bootstrap
+                    </a>
+                    <a class="nav-link" href="/styles/bt-amount.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Order-form
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-buttons.html" tabindex="-1" aria-disabled="true">Bootstrap Grid and Buttons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-login-forms.html" tabindex="-1" aria-disabled="true">Login</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- külön file-ba kiszervezett (external) css "style.css" -->
+    <h1>Hi Programmer!</h1>
+    <h3>This is a site.</h3>
+    <p>Grey</p>
+
+
+    <!-- inline css -->
+    <h1 style="color: blue;">Hi Programmer!</h1>
+    <h3 id="bio-header">BIO</h3>
+
+    <p>
+        <span class="bold">John Doe.</span>
+        He is a programmer in Google.
+    </p>
+
+    <!-- internal css -->
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+    <h3 id="skills">SKILLS</h3>
+    <style>
+        p {
+            color: grey;
+        }
+    </style>
+    <p class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.</p>
+    <p class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.</p>
+
+    <!-- nem tartozik már a "content" <p></p> osztályhoz -->
+    <p>IMAGES</p>
+    <div class="img-div">
+        <img src="img/programmer.jpeg" alt="Programmer">
+        <img src="img/programmer2.jpg" alt="Programmer">
+        <img src="img/programmer.jpeg" alt="Programmer">
+        <img src="img/programmer2.jpg" alt="Programmer">
+        <img src="img/programmer.jpeg" alt="Programmer">
+        <img src="img/programmer2.jpg" alt="Programmer">
+    </div>
+    <div class="img-div light">
+        <img src="img/programmer.jpeg" alt="Programmer">
+        <img src="img/programmer2.jpg" alt="Programmer">
+        <img src="img/programmer.jpeg" alt="Programmer">
+        <img src="img/programmer2.jpg" alt="Programmer">
+        <img src="img/programmer.jpeg" alt="Programmer">
+        <img src="img/programmer2.jpg" alt="Programmer">
+    </div>
+
+</body>
+
+</html>

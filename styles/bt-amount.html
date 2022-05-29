@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- respansive web design - content="width=device-width" ez azt jelenti, hogy a boostrap függőlegesen görgethetővé teszi az oldalt,
+    de vízszintesen nem (mobilon nem élvezhető ha vízszintesen is görgethető) -->
+    <title>calcAmount</title>
+    <!-- bootstrap szerverről -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- saját gépről -->
+    <link rel="stylesheet" href="/styles/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="/styles/js/main2.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Újratervezés 3.0</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/styles/index.html">Index<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-table.html">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/selectors.html">Selectors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/order-form.html">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-amount.html">calcAmount</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/styles/bt.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bootstrap
+                    </a>
+                    <a class="nav-link" href="/styles/bt-amount.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Order-form
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-buttons.html">Bootstrap Grid and Buttons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/styles/bt-login-forms.html">Login</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h3>Hamburger rendelés</h3>
+                <form action="">
+                    <div id="feltét" class="form-group">
+                        <label for="">Feltét</label>
+                        <input id="topInput" type="text" name="top-Input" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mennyiség</label>
+                        <input type="number" name="amount-input" class="form-control" value="1">
+                        <small class="form-text text-muted">
+                            Minimum 1, maximum 10 db
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        Fizetendő: <span class="show-amount">0</span>Ft
+                    </div>
+                    <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
